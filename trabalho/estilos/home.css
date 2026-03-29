@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Emilys+Candy&family=Jersey+25&family=Marmelad&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ribeye&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #ffffff;
+    --cor2: #C8E6C9;
+    --cor3: #35973a;
+    --cor6: #6db470;
+    --cor4: #121212;
+    --cor5: #A5D6A7;
+    --cor7: #cdf5cd7c;
+}
+
+[data-theme="dark"] {
+    --cor1: #E8F5E9;
+    --cor2: #C8E6C9;
+    --cor3: #326435;
+    --cor6: #234726;
+    --cor4: white;
+    --cor5: #A5D6A7;
+    --cor7: #96b99667;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--cor3), var(--cor6));
+    font-family: 'Marmelad', sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+    .conteudo1 {
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .oi {
+        width: 100%;
+        font-size: 50px;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .oii {
+        width: 70%;
+        padding-right: 0;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .oi {
+        font-size: 40px;
+    }
+
+    .oii {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .conteudo1 {
+        padding: 15px;
+        margin: 15px auto;
+    }
+}
+
+main {
+    flex: 1;
+    padding: 30px 50px;
+}
+
+.conteudo1 {
+    margin: 30px auto;
+    max-width: 2000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cor7);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.oi {
+    font-size: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--cor4);
+    width: 60%;
+    text-align: left;
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+
+.oii {
+    width: 40%;
+    max-width: 600px;
+    padding-right: 40px;
+}
+
+.conteudo, #campus {
+    background: var(--cor7);
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+h2 {
+    color: var(--cor4);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--cor4);
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.imagem-faculdade, .imagem-faculdade1 {
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px black;
+}
+
+.imagem-faculdade {
+    width: 100%;
+    max-width: 600px;
+}
+
+.imagem-faculdade1 {
+    width: 100%;
+    max-width: 300px;
+}
+
+.botoes {
+    margin-top: 20px;
+}
+
+.botoes a {
+    display: inline-block;
+    background-color: var(--cor3);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 18px;
+    color: var(--cor4);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.botoes a:hover {
+    background-color: var(--cor6);
+    color: black;
+}
+
+footer {
+    background-color: rgb(35, 64, 1); 
+    color: white; 
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .conteudo1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    .oi {
+        font-size: 60px;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .oii {
+        width: 100%;
+        max-width: 400px;
+        padding-right: 0;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.box-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.texto-conteudo {
+    flex: 1 1 400px;
+}
+
+.imagem-faculdade1 {
+    flex: 1 1 250px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+mark.highlight {
+    background-color: yellow;
+    color: black;
+    padding: 2px 4px;
+    border-radius: 4px;
+}

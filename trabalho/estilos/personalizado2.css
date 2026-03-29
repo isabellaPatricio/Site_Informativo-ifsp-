@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Emilys+Candy&family=Jersey+25&family=Marmelad&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ribeye&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --cor1:#ffffff;
+    --cor2:#C8E6C9;
+    --cor3:#35973a;
+    --cor6:#6db470;
+    --cor4:#121212;
+    --cor5:#A5D6A7;
+    --cor7:#cdf5cd7c;
+}
+[data-theme="dark"]{
+    --cor1:#E8F5E9;
+    --cor2:#C8E6C9;
+    --cor3:#326435;
+    --cor6:#234726;
+    --cor4:white;
+    --cor5:#A5D6A7;
+    --cor7:#96b99667;
+}
+
+.conteudo1{
+    margin: 30px auto;
+    max-width: 2000px;
+    border-radius: 15px;
+    width: 100%;
+    background: var(--cor7);
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.oii{
+    width: 30%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 50px;
+}
+
+.oi{
+    padding-left: 100px;
+    width: 60%;
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+@media (max-width: 768px) {
+    .conteudo1 {
+        flex-direction: column-reverse;
+        padding: 20px;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    .oii {
+        width: 70%;
+        margin: 20px auto;
+        max-width: 300px;
+    }
+
+    .oi {
+        padding-left: 0;
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+body{
+    background:linear-gradient(to bottom, var(--cor3), var(--cor6));
+    min-height: 100vh;
+    font-family: 'Marmelad', sans-serif;
+    color: var(--cor4);
+}
+
+.main{
+    flex: 1;
+    padding: 30px 50px;
+}
+
+.barra{
+    background-color: rgb(35, 64, 1);
+    display: flex;
+    height: 50px;
+}
+
+.text-container:hover{
+    transform: scale(1.03);
+}
+
+.card{
+    background-color: var(--cor7);
+    color: var(--cor4);
+}
+    
+.card a:hover{
+    text-decoration: underline;
+    color: #52CB49;
+}
+
+p{
+    color: var(--cor4);
+    text-align: justify;
+}
+
+h3{
+    color: var(--cor4);
+}
+
+.pergunta{
+    color: var(--cor4);
+    margin: 10px;
+    font-size: 20px;
+    display: block;
+    padding: 5px;
+}
+
+.habilidade{
+    color: var(--cor4);
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    
+div#html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+        
+}
+
+.area:nth-child(even) { /*efeito zig zag (alterna ordem dos pares)*/
+    flex-direction: row-reverse;
+}
+    
+.imgcss{
+    width: 300px;
+    height: 300px;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.back{
+    width: 300px;
+    height: 300px;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px solid rgba(0, 0, 0, 0.5) 
+}
+    
+.mobile{
+    width: 300px;
+    height: 300px;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px solid rgba(0, 0, 0, 0.5);
+
+}
+
+.lista{
+    color: var(--cor4);
+}
+
+h2{
+    color: var(--cor4);
+    padding-top:10px ;
+    font-family: 'Jersey 25', sans-serif;
+    font-weight: normal;
+    margin: 5px;
+}
+
+.card-rodape {
+    background-color:var(--cor7) ;
+    border: 0.5px solid #0412071d;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'marmelad', sans-serif;
+    font-weight: normal;
+    max-width: 800px;
+    min-width: 100px;
+    margin: 20px auto;
+}
+
+.card-rodape:hover{
+    transform: scale(1.03); /*aumenta o tamanho do conteudo em 30%*/
+}
+
+.area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .area {
+        flex-direction: column !important;
+        gap: 20px;
+        padding: 10px;
+        margin: 30px auto;
+    }
+
+    .imgcss, .back, .mobile {
+        width: 200px;
+        height: 200px;
+        padding-top: 0;
+    }
+
+    .text-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .pergunta {
+        font-size: 18px;
+        margin: 5px;
+        padding: 3px;
+    }
+}
+
+.text-container{
+   border-radius: 5px;
+   background-color:var(--cor7);
+   padding: 20px;
+}
+
+footer {
+    background-color: rgb(35, 64, 1);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
